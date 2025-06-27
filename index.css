@@ -616,3 +616,7 @@ body:not(.user-is-tabbing) a:focus {
 .header__text p {
   color: #ffffff !important;
 }
+
+.btn--pink {
+  color: #ffffff !important;
+}
