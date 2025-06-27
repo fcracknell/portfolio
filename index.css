@@ -632,3 +632,16 @@ body:not(.user-is-tabbing) a:focus {
   background: var(--pink);     /* Keep pink background */
   color: #ffffff !important;   /* Keep text white */
 }
+
+.btn--pink {
+  background: var(--pink) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--pink) !important;
+}
+
+.btn--pink:hover,
+.btn--pink:focus {
+  background: var(--pink) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--pink) !important;
+}
