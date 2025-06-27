@@ -34,10 +34,10 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
-    --pink: #ff3258;
-    --white: #f0e9f2;
-    --white-1: #e5e5e6da;
+    --black: #f0f8ff;         /* Light background (AliceBlue) */
+    --pink: #0096FF;          /* Accent (Vivid Sky Blue) */
+    --white: #002B5B;         /* Primary dark text/navy */
+    --white-1: #003f7f;       /* Secondary dark text/navy variant */
 
 
     --container-max-width: 1180px;
