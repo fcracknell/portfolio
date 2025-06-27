@@ -436,11 +436,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.header__text h1,
-.header__text p {
-  color: #ffffff !important;
-}
-
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
@@ -615,4 +610,9 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+
+.header__text h1,
+.header__text p {
+  color: #ffffff !important;
 }
