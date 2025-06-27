@@ -438,7 +438,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text h1,
 .header__text p {
-  color: var(--white);
+  color: #ffffff;
 }
 
 /* --------------------------------------- */
