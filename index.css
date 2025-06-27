@@ -264,7 +264,7 @@ body:not(.user-is-tabbing) a:focus {
     position: relative;
     display: inline-block;
     padding: .6rem;
-    color: inherit;
+    color: #ffffff;
     text-decoration: none;
     border-bottom: 1px solid var(--pink);
 }
