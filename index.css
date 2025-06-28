@@ -38,10 +38,10 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #f0f8ff;         /* Light background (AliceBlue) */
-    --pink: #0096FF;          /* Accent (Vivid Sky Blue) */
-    --white: #002B5B;         /* Primary dark text/navy */
-    --white-1: #003f7f;       /* Secondary dark text/navy variant */
+    --lightbg: #f0f8ff;         /* Light background (AliceBlue) --lightbg*/
+    --deepsb: #0096FF;          /* Accent (Vivid Sky Blue) --pink*/
+    --darknb: #002B5B;         /* Primary dark text/navy --darknb*/
+    --darknb2: #003f7f;       /* Secondary dark text/navy variant --darknb2*/
 
 
     --container-max-width: 1180px;
@@ -74,9 +74,9 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--white-1);
+    color: var(--darknb2);
     line-height: var(--line-height-normal);
-    background: var(--black);
+    background: var(--lightbg);
     overflow-x: hidden;
 }
 
@@ -192,7 +192,7 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--white);
+    color: var(--darknb);
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
@@ -222,7 +222,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: var(--white);
+    color: var(--darknb);
     border: 1px solid  var(--pink);
     font-weight: 400;
 }
