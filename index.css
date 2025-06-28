@@ -2,6 +2,11 @@
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
 
+.header__text h1,
+.header__text p {
+    color: #ffffff;
+}
+
 .dark-blue-icon {
   filter: invert(19%) sepia(80%) saturate(1071%) hue-rotate(180deg) brightness(95%) contrast(105%);
 }
