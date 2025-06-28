@@ -214,7 +214,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--white);
+    color: var(--pink);
 }
 
 .btn {
