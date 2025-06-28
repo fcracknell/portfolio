@@ -255,6 +255,12 @@ body:not(.user-is-tabbing) a:focus {
     transition: all 0.2s;
 }
 
+.btn--contact {
+    background: var(--deepsb);
+    transition: all 0.2s;
+    color: #ffffff;
+}
+
 .btn--pink::after {
     display: none;
 }
