@@ -616,36 +616,3 @@ body:not(.user-is-tabbing) a:focus {
     } 
 }
 
-.header__text h1,
-.header__text p {
-  color: #ffffff !important;
-}
-
-.btn--pink {
-  color: #ffffff !important;
-}
-
-.btn--pink {
-  background: var(--pink);
-  color: #ffffff !important; /* White text */
-  transition: all 0.2s;
-}
-
-.btn--pink:hover,
-.btn--pink:focus {
-  background: var(--pink);     /* Keep pink background */
-  color: #ffffff !important;   /* Keep text white */
-}
-
-.btn--pink {
-  background: var(--pink) !important;
-  color: #ffffff !important;
-  border: 1px solid var(--pink) !important;
-}
-
-.btn--pink:hover,
-.btn--pink:focus {
-  background: var(--pink) !important;
-  color: #ffffff !important;
-  border: 1px solid var(--pink) !important;
-}
