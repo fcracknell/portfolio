@@ -205,7 +205,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--deepsb);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -214,7 +214,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--deepsb);
 }
 
 .btn {
@@ -222,8 +222,8 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: var(--darknb);
-    border: 1px solid  var(--pink);
+    color: inherit;
+    border: 1px solid  var(--deepsb);
     font-weight: 400;
 }
 
@@ -238,7 +238,7 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--pink);
+    background: var(--darknb);
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -247,11 +247,11 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--deepsb);
 }
 
 .btn--pink {
-    background: var(--pink);
+    background: var(--deepsb);
     transition: all 0.2s;
 }
 
@@ -268,9 +268,9 @@ body:not(.user-is-tabbing) a:focus {
     position: relative;
     display: inline-block;
     padding: .6rem;
-    color: var(--pink);
+    color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid var(--deepsb);
 }
 
 .link__text::after {
@@ -280,7 +280,7 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--pink);
+    background: var(--darknb);
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -293,7 +293,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+    background: var(--deepsb);
 }
 
 .link__text span {
@@ -312,7 +312,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--deepsb);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
