@@ -247,7 +247,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--white);
+    background: var(--pink);
 }
 
 .btn--pink {
