@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.PNG" />
 
-  <!-- Put your site title here -->
-  <title>
-    Finn Cracknell | Inverted Pendulum
-  </title>
+  <title>Finn Cracknell | Inverted Pendulum</title>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <meta name="description" content="Simulation of an inverted pendulum using energy-based swing-up and LQR control." />
+  <meta name="keywords" content="Inverted Pendulum, Control Systems, LQR, Simulation, Python, MATLAB, Dynamics" />
+
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -21,62 +18,115 @@
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+    <!-- ***** Inverted Pendulum Project Details ***** -->
 
-    <section class="work" id="work">
-      <div class="row">
+    <section class="details" id="pendulum">
+      <div class="details__box">
         <h2>Swing-Up and LQR Control Simulation of an Inverted Pendulum</h2>
-        <div class="work__boxes">
+        <p class="details__text">
+          This project simulates an inverted pendulum on a cart using a two-phase control approach: an energy-based
+          swing-up algorithm followed by Linear Quadratic Regulation (LQR) for stabilisation. The simulation
+          environment is implemented in Python using Pymunk and Pygame for physics and visualization, while the control
+          design is developed in MATLAB.
+        </p>
 
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Project Overview</h3>
-              <p>
-                TODO
-              </p>
-
-              <div class="work__links">
-                <a href="https://github.com/fcracknell/portfolio/tree/main/pendulum" target="_blank" class="link__text">
-                  View Source Code
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="details__image-box">
+          <img src="./files/pendulum.gif" alt="Pendulum simulation GIF" />
         </div>
-      </div>      
+
+        <div class="details__links">
+          <a href="https://github.com/fcracknell/portfolio/tree/main/pendulum" target="_blank" class="link__text">
+            View Source Code on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="details__box">
+        <h3>🧠 Methodology</h3>
+        <p class="details__text">
+          The pendulum is first brought near the upright equilibrium through energy shaping, where the control input is
+          based on the difference between the current energy and the target energy of the upright state. Once close to
+          vertical, the system transitions to a full-state feedback LQR controller designed using MATLAB's
+          state-space representation.
+        </p>
+        <ul class="details__list">
+          <li>Energy-based swing-up using the pendulum’s total mechanical energy</li>
+          <li>Linearization of dynamics around upright position</li>
+          <li>Design of LQR gain matrix to minimize a cost function</li>
+          <li>Simulation and animation of state response in Python</li>
+        </ul>
+      </div>
+
+      <div class="details__box">
+        <h3>⚙️ Technologies Used</h3>
+        <ul class="details__list">
+          <li>Python (Pymunk, Pygame)</li>
+          <li>MATLAB (Control Systems Toolbox)</li>
+          <li>State-space control design</li>
+        </ul>
+      </div>
+
+      <div class="details__box">
+        <h3>📊 Results</h3>
+        <p class="details__text">
+          The LQR controller successfully stabilizes the pendulum after the energy-based swing-up phase. Control effort
+          and state contributions are visualized using MATLAB plots, highlighting the role of each state in the
+          feedback law.
+        </p>
+        <div class="details__image-box">
+          <img src="./files/lqr_response.png" alt="LQR response plot" />
+        </div>
+      </div>
+
+      <div class="details__box">
+        <h3>📁 Outputs</h3>
+        <ul class="details__list">
+          <li>GIF animation of the swing-up and stabilisation</li>
+          <li>MATLAB plots showing state evolution and control signal</li>
+          <li>Reusable controller and simulation modules</li>
+        </ul>
+      </div>
+
+      <div class="details__box">
+        <h3>📚 References</h3>
+        <ul class="details__list">
+          <li><a href="https://coecsl.ece.illinois.edu/se420/ast_fur96.pdf" target="_blank">Astrom & Furuta (1996) - Swinging up a pendulum by energy control</a></li>
+          <li>MathWorks Control System Toolbox documentation</li>
+        </ul>
+      </div>
+
+      <div class="details__box">
+        <h3>👨‍💻 Author</h3>
+        <p class="details__text">Created by Finn Cracknell | 2025</p>
+      </div>
     </section>
 
-
+  </main>
 
   <!-- ***** Footer ***** -->
-
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
-
         <li class="footer__social-link-item">
           <a href="https://github.com/fcracknell" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image dark-blue-icon" alt="Github">
+            <img src="./images/github.svg" class="footer__social-image dark-blue-icon" alt="Github" />
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/finn-cracknell-671b79235">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image dark-blue-icon" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/finn-cracknell-671b79235">
+            <img src="./images/linkedin.svg" class="footer__social-image dark-blue-icon" alt="Linkedin" />
           </a>
         </li>
       </ul>
     </div>
   </footer>
 
-
-
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
+
   <script src="./index.js"></script>
 </body>
 
 </html>
+
