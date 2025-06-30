@@ -2,7 +2,7 @@
 
 This project simulates the swing-up and LQR control stabilisation of an inverted pendulum on a cart using a Python implemented physics engine and MATLAB based controller design. It demonstrates how to transition from an energy-based swing-up strategy to precise stabilisation using Linear Quadratic Regulation (LQR).
 
-![Portfolio Gif](/files/portfolio.gif)
+![Portfolio Gif](https://github.com/fcracknell/portfolio/blob/main/files/pendulum.gif)
 
 ---
 
