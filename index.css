@@ -627,3 +627,76 @@ body:not(.user-is-tabbing) a:focus {
     color: #ffffff;
 }
 
+/* --------------------------------------- */
+/* ----- Report Style Project Page ----- */
+/* --------------------------------------- */
+
+.details__box {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+/* Maintain good vertical spacing between sections */
+.details__box:not(:last-child) {
+    margin-bottom: 8rem;
+}
+
+.details__text {
+    width: 100%;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.details__list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 3rem;
+}
+
+.details__image-box {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.details__image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+/* Style the code/GitHub icon/link */
+.details__links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.details__code {
+    height: 3.5rem;
+    transition: transform 0.3s;
+}
+
+.details__code:hover {
+    transform: scale(1.15);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .details__text {
+        font-size: 1.6rem;
+    }
+
+    .details__box {
+        padding: 2rem 1.5rem;
+    }
+}
+
+
