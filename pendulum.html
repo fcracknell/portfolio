@@ -183,10 +183,13 @@
         <p class="details__text">
           <strong>Initial Swing-Up Implementation</strong>
         </p>
-        <p class="details__text">
-          first swing up by pure acceleration in one direction, done but not perfect (still swung down after enough time)
-          --> trying to imitate furuta paper
-        </p>
+        <ul class="details__list">
+          <li>Successful implementation of pendulum-cart system in phsyics engine</li>
+          <li>First swing-up achieved by 'single-swing behaviour' as outlined by Astrom & Furuta (1996) [1]</li>
+          <li>By recreating basic results in literature, a strong foundational understanding and system was made</li>
+          <li>As shown in plot of theta vs time, the pendulum does a good job of being swung-up but does fall down after enough time has elapsed</li>
+          <li>Therefore necessary to control pendulum angle once swung-up</li>
+        </ul>
         <div class="details__image-box">
           <img src="./pendulum/Stage_1_Media/pendulum.gif" alt="First Swing-Up Demonstration" />
         </div>
@@ -201,10 +204,12 @@
         <p class="details__text">
           <strong>PID Control for Inverted Pendulum</strong>
         </p>
-        <p class="details__text">
-          then implemented PID for already inverted pendulum under impulse force
-            --> trying to imitate matlab tutorial
-        </p>
+        <ul class="details__list">
+          <li>Successful implementation of PID control for a stationary inverted pendulum with small disturbance</li>
+          <li>Given the pendulum is not accelerating once swung-up, this forms a proof of concept that control of pendulum angle can be obtained once swung-up</li>
+          <li>This PID control is done by imitating results in [3], again recreating results in literature to form a strong initial basis</li>
+          <li>As shown, the cart position is unstable, necessitating full-state control that is eventually implemented later</li>
+        </ul>
         <div class="details__image-box">
           <img src="./pendulum/Stage_2_Media/pendulum.gif" alt="First Swing-Up Demonstration" />
         </div>
@@ -219,14 +224,11 @@
         <p class="details__text">
           <strong>Swing-Up and PID Control</strong>
         </p>
-        <p class="details__text">
-          then try combine the two
-
-          then implement multi swing control (simple change, i.e. actually implement what the furuta paper was saying)
-
-          then combine swing-up with PID control once swung-up to stabilise at the top
-                --> the cart position is unstable however, therefore may need to implement a more complex controller
-        </p>
+        <ul class="details__list">
+          <li>Successful implementation of 'multi-swing behaviour' to swing-up pendulum </li>
+          <li>Implemented seemless transition to PID control once swung-up</li>
+          <li>Pendulum angle is controlled, however cart still continues onto infinity</li>
+        </ul>
         <div class="details__image-box">
           <img src="./pendulum/Stage_3_Media/pendulum.gif" alt="First Swing-Up Demonstration" />
         </div>
@@ -241,13 +243,10 @@
         <p class="details__text">
           <strong>LQR Control for Inverted Pendulum</strong>
         </p>
-        <p class="details__text">
-            moved to LQR control method for full-state (pendulum angle and cart position) control
-            --> imitated state-space MatLab tutorial
-            	--> for single mass pendulm rather than uniform rod (just involved changing expression for I/J_p)
-            --> got both pendulum andle and cart position control working
-          
-        </p>
+        <ul class="details__list">
+          <li>Successful implementation of full-state LQR control for a (very) small disturbance</li>
+          <li>Now both pendulum angle and cart position is stabilised</li>
+        </ul>
         <div class="details__image-box">
           <img src="./pendulum/Stage_4_Media/pendulum.gif" alt="First Swing-Up Demonstration" />
         </div>
@@ -262,11 +261,11 @@
         <p class="details__text">
           <strong>Swing-Up and LQR Control (Final Product)</strong>
         </p>
-        <p class="details__text">
-            combined swing-up and LQR control
-            
-            Copied existing code to implement proper documentation and streamline code
-        </p>
+        <ul class="details__list">
+          <li>Implemented seemless transition to full-state LQR control once swung-up</li>
+          <li>Successful swing-up and subsequent control of both pendulum angle and cart position achieved</li>
+          <li>As shown in the below gif, the system is able to restabilise even after being subject to an impulse force once stabilised!</li>
+        </ul>
         <div class="details__image-box">
           <img src="./pendulum/Stage_5_Media/pendulum.gif" alt="First Swing-Up Demonstration" />
         </div>
