@@ -36,8 +36,9 @@
          <p class="details__text">
           Using a custom Python physics simulation and MATLAB-based controller design,
           this project saw the successful implementation of an energy-based swing-up
-          strategy, PID control, and ultimately a full-state LQR controller to 
-          stabilise both the pendulum angle and cart position simultaneously.
+          strategy, proportional-integral-derivative (PID) control, and ultimately a 
+          full-state linear quadratic regulator (LQR) controller to stabilise both 
+          the pendulum angle and cart position simultaneously.
         </p>
 
         <div class="details__image-box">
@@ -54,7 +55,14 @@
       <div class="details__box">
         <h3>Project Evolution and Methodology</h3>
         <p class="details__text">
-          TODO
+          The inverted pendulum system consists of a cart with a given mass, constrained
+          to move in one dimension along the horizontal direction, and a pendulum with 
+          some other mass connected to this cart by (in this case) a massless rod. The 
+          desired state of this system is for the pendulum to be vertically upright with 
+          no angular velocity, and the cart to also be stationary at some desired 
+          horizontal position. The challenge of the inverted pendulum problem arises 
+          when we restrict ourselves to only being able to control the system by 
+          applying a force to the cart.
         </p>
         <ul class="details__list">
           <li></li>
