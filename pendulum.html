@@ -125,6 +125,56 @@
         <div class="details__image-box">
           <img src="./images/pendswingupforce.PNG" alt="Inverted Pendulum System Diagram" />
         </div>
+
+        <p class="details__text">
+          Once the pendulum has been swung-up, the challenge shifts to actively 
+          maintaining the inherently unstable upright position of the now inverted
+          pendulum. This is where control methods become essential.
+        </p>
+
+        <p class="details__text">
+          To Stabilise the pendulum, we implement a Linear Quadratic Regulator (LQR),
+          a full-state feedback control strategy that allows both the pendulum angle
+          and cart position to be controlled. Alternatively, a more simple 
+          proportional-integral-derivative (PID) controller could be implemented, but
+          its authority is limited to just the pendulum angle, meaning the cart 
+          continues moving on into infinity!
+        </p>
+
+        <p class="details__text">
+          Without getting too far into the details, an LQR controller computes a way
+          of applying force to the cart purely based on the current state of the system
+          (cart position, cart velocity, pendulum angle, and pendulum angular velocity).
+          It achieves this by modelling the dynamics of the cart-pendulum system as a 
+          set of linearised state-space equations about the upright equilibrium position.
+          The applied force (system input) is calculated by each state variable 
+          (cart position, cart velocity, pendulum angle, and pendulum angular velocity)
+          by a given constant (gain) and summing the result. The state variables 
+          (system output) are then observed once more and a new input force is 
+          calculated, forming a closed-loop control algorithm that stabilises when the
+          pendulum is stationary and upright, and the cart is stationary.
+        </p>
+
+        <p class="details__text">
+          The control law for the input force u to the cart takes the form:
+        </p>
+
+        <div class="details__image-box">
+          <img src="./images/pendcontrolequation.PNG" alt="Inverted Pendulum System Diagram" />
+        </div>
+        
+        <p class="details__text">
+          Where <strong>K</strong> is the gain that corresponds to each state variable 
+          represented by <strong>x</strong>.
+          For further details regarding PID and LQR control in this context, see [3].
+        </p>
+
+        <p class="details__text">
+          Combining both the swing-up and inverted control routines, what results is 
+          a smooth and mathematically optimal strategy that gracefully positions the 
+          pendulum into its upright position, and precisely maintains this 
+          configuration whilst stabilising to the desired position.
+        </p>
         
         <ul class="details__list">
           <li></li>
