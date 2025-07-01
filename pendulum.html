@@ -147,11 +147,11 @@
           (cart position, cart velocity, pendulum angle, and pendulum angular velocity).
           It achieves this by modelling the dynamics of the cart-pendulum system as a 
           set of linearised state-space equations about the upright equilibrium position.
-          The applied force (system input) is calculated by each state variable 
+          The applied force (system input) is calculated by multiplying each state variable 
           (cart position, cart velocity, pendulum angle, and pendulum angular velocity)
-          by a given constant (gain) and summing the result. The state variables 
+          by a calculated and optimised constant (gain), then summing the result. The state variables 
           (system output) are then observed once more and a new input force is 
-          calculated, forming a closed-loop control algorithm that stabilises when the
+          calculated. Rinse and repeat, and we now form a closed-loop control algorithm that stabilises when the
           pendulum is stationary and upright, and the cart is stationary.
         </p>
 
