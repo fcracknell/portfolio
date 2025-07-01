@@ -187,7 +187,7 @@
           <li>Successful implementation of pendulum-cart system in phsyics engine</li>
           <li>First swing-up achieved by 'single-swing behaviour' as outlined by Astrom & Furuta (1996) [1]</li>
           <li>By recreating basic results in literature, a strong foundational understanding and system was made</li>
-          <li>As shown in plot of theta vs time, the pendulum is swung-up correctly but does fall down after enough time has elapsed</li>
+          <li>The pendulum is swung-up correctly but does fall down offscreen after enough time has elapsed</li>
           <li>Therefore it is necessary to control pendulum angle once swung-up</li>
         </ul>
         <div class="details__image-box">
@@ -206,9 +206,10 @@
         </p>
         <ul class="details__list">
           <li>Successful implementation of PID control for a stationary inverted pendulum with small disturbance</li>
-          <li>Given the pendulum is not accelerating once swung-up, this forms a proof of concept that control of pendulum angle can be obtained once swung-up</li>
+          <li>This forms a proof of concept that control of pendulum angle can be obtained once swung-up</li>
+          <li>This is because the pendulum system will be stationary in its own constant velocity reference frame</li>
           <li>This PID control is done by imitating results in [3], again recreating results in literature to form a strong initial basis</li>
-          <li>As shown, the cart position is unstable, necessitating full-state control that is eventually implemented later</li>
+          <li>However, the cart position is unstable, necessitating full-state control that is implemented later</li>
         </ul>
         <div class="details__image-box">
           <img src="./pendulum/Stage_2_Media/pendulum.gif" alt="First Swing-Up Demonstration" />
